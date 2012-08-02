@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>RSVP for Event</title>
+<link rel="stylesheet" type="text/css" href="css/view.css" media="all">
+<script type="text/javascript" src="js/view.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="images/top.png" alt="topbar">
+	<div id="form_container">
+	
+		<h1><a>RSVP for Event</a></h1>
+		<form method="post" action="formprocessing.php" name="thisform" id="groupform" onsubmit="return validate();">
+		
+			<div class="form_description">
+				<h2>RSVP for Event</h2>
+				<p>Please fill the registration form for 2012 Golf Tournament.</p>
+			</div>
+
+			<ul >
+			
+					<li id="li_1" >
+		<label class="description" for="Title">Title </label>
+		<div>
+			<input id="Title" name="Title" class="element text small" type="text" maxlength="25" value=""/> 
+		</div> 
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">Name* </label>
+		<span>
+			<input id="FirstName" name= "FirstName" class="element text" maxlength="25" size="8" value=""/>
+			<label>First*</label>
+		</span>
+		<span>
+			<input id="LastName" name= "LastName" class="element text" maxlength="25" size="14" value=""/>
+			<label>Last*</label>
+		</span> 
+		</li>		<li id="li_x1" >
+		<label class="description" for="PhoneNumber">PhoneNum </label>
+		<div>
+			<input id="PhoneNumber" name="PhoneNumber" class="element text medium" type="text" maxlength="10" value=""/> 
+		</div> 
+		</li>		<li id="Email" >
+		<label class="description" for="Email">Email* </label>
+		<div>
+			<input id="Email" name="Email" class="element text medium" type="text" maxlength="25" value=""/> 
+		</div>
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">Company* </label>
+		<div>
+			<input id="element_3" name="element_3" class="element text medium" type="text" maxlength="25" value=""/> 
+		</div> 
+		</li>		<li id="guests" >
+		<label class="description" for="NumberOfGuests">Number of Guests* </label>
+		<div>
+		<select class="element select small" id="NumberOfGuests" name="NumberOfGuests"> 
+			<option value="" selected="selected"></option>
+			<option value="1" >1</option>
+			<option value="2" >2</option>
+			<option value="3" >3</option>
+			<option value="4" >4</option>
+		</select>
+		</div> 
+		</li>
+
+
+
+			<li id="li_4" >
+		<label class="description" for="labe_Address">Address* </label>
+		
+		<div>
+			<input id="Address" name="Address" class="element text large" value="" type="text">
+			<label for="Address">Street Address*</label>
+		</div>
+	
+		<div>
+			<input id="element_4_2" name="element_4_2" class="element text large" value="" type="text">
+			<label for="element_4_2">Address Line 2</label>
+		</div>
+	
+		<div class="left">
+			<input id="City" name="City" class="element text medium" value="" type="text">
+			<label for="City">City</label>
+		</div>
+	
+		<div class="right">
+			<input id="State" name="State" class="element text medium" value="" type="text">
+			<label for="State">State / Province / Region</label>
+		</div>
+	
+		<div class="left">
+			<input id="ZipCode" name="ZipCode" class="element text medium" maxlength="15" value="" type="text">
+			<label for="ZipCode">Postal / Zip Code*</label>
+		</div>
+	</li> <!-- address information ends -->
+	<br />
+	<br />
+<!-- tshirt information -->
+<div class="tshirt" >
+<label class="description" for="label_tshirts">Please provide information for the t-shirts </label>
+<li id="guestOne" >
+	<span>
+		<input id="Player1Name" name="Player1Name" class="element text medium" size="40" type="text" maxlength="255" value=""/> 
+		<label >Player Name </label>
+	</span> 
+
+
+<span>
+	<input id="Player1" name="Player1Email" class="element text medium" type="text" maxlength="30" value=""/> 
+	<label>Email</label>
+</span>
+
+<span>
+	<select class="element select" id="Player1Size" name="Player1Size"> 
+		<option value="" selected="selected"></option>
+		<option value="S" >S</option>
+		<option value="M" >M</option>
+		<option value="L" >L</option>
+		<option value="XL" >XL</option>
+		<option value="XXL" >XXL</option>
+	</select>
+		<label>T-shirt size </label>
+</span> 
+</li> <!--guest1 information ends-->
+
+<li id="guestTwo" >
+	<span>
+		<input id="Player2Name" name="Player2Name" class="element text medium" size="40" type="text" maxlength="255" value=""/> 
+		<label >Player Name </label>
+	</span> 
+
+
+<span>
+	<input id="Player2Email" name="Player2Email" class="element text medium" type="text" maxlength="30" value=""/> 
+	<label>Email</label>
+</span>
+
+<span>
+	<select class="element select" id="Player2Size" name="Player2Size"> 
+		<option value="" selected="selected"></option>
+		<option value="1" >S</option>
+		<option value="2" >M</option>
+		<option value="3" >L</option>
+		<option value="4" >XL</option>
+		<option value="5" >XXL</option>
+	</select>
+		<label>T-shirt size </label>
+</span> 
+</li><!-- guest2 information ends -->
+
+
+<li id="guestThree" >
+	<span>
+		<input id="Player3Name" name="Player3Name" class="element text medium" size="40" type="text" maxlength="255" value=""/> 
+		<label >Player Name </label>
+	</span> 
+
+
+<span>
+	<input id="Player3Email" name="Player3Email" class="element text medium" type="text" maxlength="30" value=""/> 
+	<label>Email</label>
+</span>
+
+<span>
+	<select class="element select" id="Player3Size" name="Player3Size"> 
+		<option value="" selected="selected"></option>
+		<option value="1" >S</option>
+		<option value="2" >M</option>
+		<option value="3" >L</option>
+		<option value="4" >XL</option>
+		<option value="5" >XXL</option>
+	</select>
+		<label>T-shirt size </label>
+</span> 
+</li><!-- guest3information ends-->
+
+<li id="guestFour" >
+	<span>
+		<input id="Player4Name" name="Player4Name" class="element text medium" size="40" type="text" maxlength="255" value=""/> 
+		<label >Player Name </label>
+	</span> 
+
+
+<span>
+	<input id="Player4Email" name="Player4Email" class="element text medium" type="text" maxlength="30" value=""/> 
+	<label>Email</label>
+</span>
+
+<span>
+	<select class="element select" id="Player4Size" name="Player4Size"> 
+		<option value="" selected="selected"></option>
+		<option value="1" >S</option>
+		<option value="2" >M</option>
+		<option value="3" >L</option>
+		<option value="4" >XL</option>
+		<option value="5" >XXL</option>
+	</select>
+		<label>T-shirt size </label>
+</span> 
+</li><!-- guest4information ends-->
+</div>
+	
+		</li>
+			
+		<li class="buttons">
+			<input type="hidden" name="form_id" value="429415" />
+			<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+
+		</ul>
+		
+		<br />
+		<div id="footer">
+			  <a href="http://www.unm.edu">UNM</a> | <a href="http://parentassociation.unm.edu">UNM Parent Association</a>
+	    </div>
+		</form>	
+	</div>
+	<img id="bottom" src="images/bottom.png" alt="footerbar"/>
+	</body>
+</html>
