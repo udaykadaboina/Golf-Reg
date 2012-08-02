@@ -902,3 +902,21 @@ tshirt div {
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
+ .confirmpage {
+	margin: 0px auto;
+	clear: both;
+    color: #999999;
+    font-size: 85%;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 640px;
+
+}
+
+.descriptionpara {
+	color: #FFF;
+	background-color:#C10037;
+	padding-left:10px;
+	
+	
+}

@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<div class="alert alert-sucess">
+	<div class="alert alert-success">
     	<h2 class="alert-heading" >Success!</h2>
     	<h3>Thank you for your registration, we look forward to seeing you at 2012 Golf Tournament.</h3>
 

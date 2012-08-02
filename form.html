@@ -9,13 +9,13 @@
 </head>
 <body id="main_body" >
 	
-	<img id="top" src="images/top.png" alt="topbar">
+	<img id="top" src="images/top.png" alt="topbar" />
 	<div id="form_container">
-	
-		<h1><a>RSVP for Event</a></h1>
+		<img id="logo" src="images/unm_dept_logo.gif" alt="logo" />
+		<h1>RSVP for Event</h1>
 		<form method="post" action="formprocessing.php" name="thisform" id="groupform" onsubmit="return validate();">
 		
-			<div class="form_description">
+			<div class="form_description descriptionpara">
 				<h2>RSVP for Event</h2>
 				<p>Please fill the registration form for 2012 Golf Tournament.</p>
 			</div>
@@ -52,19 +52,7 @@
 		<div>
 			<input id="element_3" name="element_3" class="element text medium" type="text" maxlength="25" value=""/> 
 		</div> 
-		</li>		<li id="guests" >
-		<label class="description" for="NumberOfGuests">Number of Guests* </label>
-		<div>
-		<select class="element select small" id="NumberOfGuests" name="NumberOfGuests"> 
-			<option value="" selected="selected"></option>
-			<option value="1" >1</option>
-			<option value="2" >2</option>
-			<option value="3" >3</option>
-			<option value="4" >4</option>
-		</select>
-		</div> 
-		</li>
-
+		</li>		
 
 
 			<li id="li_4" >
@@ -96,10 +84,27 @@
 		</div>
 	</li> <!-- address information ends -->
 	<br />
-	<br />
+			<li class="section_break">
+			<h3 class="descriptionpara">Guests Information</h3>
+			<p></p>
+		    </li>
+	    <li id="guests" >
+			<label class="description" for="NumberOfGuests">Number of Guests* </label>
+			<div>
+			<select class="element select small" id="NumberOfGuests" name="NumberOfGuests"> 
+				<option value="" selected="selected"></option>
+				<option value="1" >1</option>
+				<option value="2" >2</option>
+				<option value="3" >3</option>
+				<option value="4" >4</option>
+			</select>
+			</div> 
+		</li>
 <!-- tshirt information -->
-<div class="tshirt" >
+<li class="tshirt" >
+	<div>
 <label class="description" for="label_tshirts">Please provide information for the t-shirts </label>
+<ul>
 <li id="guestOne" >
 	<span>
 		<input id="Player1Name" name="Player1Name" class="element text medium" size="40" type="text" maxlength="255" value=""/> 
@@ -107,12 +112,12 @@
 	</span> 
 
 
-<span>
-	<input id="Player1" name="Player1Email" class="element text medium" type="text" maxlength="30" value=""/> 
-	<label>Email</label>
-</span>
+	<span>
+		<input id="Player1" name="Player1Email" class="element text medium" type="text" maxlength="30" value=""/> 
+		<label>Email</label>
+	</span>
 
-<span>
+	<span>
 	<select class="element select" id="Player1Size" name="Player1Size"> 
 		<option value="" selected="selected"></option>
 		<option value="S" >S</option>
@@ -121,8 +126,8 @@
 		<option value="XL" >XL</option>
 		<option value="XXL" >XXL</option>
 	</select>
-		<label>T-shirt size </label>
-</span> 
+	<label>T-shirt size </label>
+	</span> 
 </li> <!--guest1 information ends-->
 
 <li id="guestTwo" >
@@ -132,12 +137,12 @@
 	</span> 
 
 
-<span>
-	<input id="Player2Email" name="Player2Email" class="element text medium" type="text" maxlength="30" value=""/> 
-	<label>Email</label>
-</span>
+	<span>
+		<input id="Player2Email" name="Player2Email" class="element text medium" type="text" maxlength="30" value=""/> 
+		<label>Email</label>
+	</span>
 
-<span>
+	<span>
 	<select class="element select" id="Player2Size" name="Player2Size"> 
 		<option value="" selected="selected"></option>
 		<option value="1" >S</option>
@@ -146,8 +151,8 @@
 		<option value="4" >XL</option>
 		<option value="5" >XXL</option>
 	</select>
-		<label>T-shirt size </label>
-</span> 
+	<label>T-shirt size </label>
+	</span> 
 </li><!-- guest2 information ends -->
 
 
@@ -158,12 +163,12 @@
 	</span> 
 
 
-<span>
-	<input id="Player3Email" name="Player3Email" class="element text medium" type="text" maxlength="30" value=""/> 
-	<label>Email</label>
-</span>
+	<span>
+		<input id="Player3Email" name="Player3Email" class="element text medium" type="text" maxlength="30" value=""/> 
+		<label>Email</label>
+	</span>
 
-<span>
+	<span>
 	<select class="element select" id="Player3Size" name="Player3Size"> 
 		<option value="" selected="selected"></option>
 		<option value="1" >S</option>
@@ -172,8 +177,8 @@
 		<option value="4" >XL</option>
 		<option value="5" >XXL</option>
 	</select>
-		<label>T-shirt size </label>
-</span> 
+	<label>T-shirt size </label>
+	</span> 
 </li><!-- guest3information ends-->
 
 <li id="guestFour" >
@@ -183,12 +188,12 @@
 	</span> 
 
 
-<span>
-	<input id="Player4Email" name="Player4Email" class="element text medium" type="text" maxlength="30" value=""/> 
-	<label>Email</label>
-</span>
+	<span>
+		<input id="Player4Email" name="Player4Email" class="element text medium" type="text" maxlength="30" value=""/> 
+		<label>Email</label>
+	</span>
 
-<span>
+	<span>
 	<select class="element select" id="Player4Size" name="Player4Size"> 
 		<option value="" selected="selected"></option>
 		<option value="1" >S</option>
@@ -197,12 +202,15 @@
 		<option value="4" >XL</option>
 		<option value="5" >XXL</option>
 	</select>
-		<label>T-shirt size </label>
-</span> 
+	<label>T-shirt size </label>
+	</span> 
 </li><!-- guest4information ends-->
 </div>
+</li>
+</ul>
+
 	
-		</li>
+
 			
 		<li class="buttons">
 			<input type="hidden" name="form_id" value="429415" />
@@ -212,9 +220,9 @@
 		</ul>
 		
 		<br />
-		<div id="footer">
+		<li id="footer">
 			  <a href="http://www.unm.edu">UNM</a> | <a href="http://parentassociation.unm.edu">UNM Parent Association</a>
-	    </div>
+	    </li>
 		</form>	
 	</div>
 	<img id="bottom" src="images/bottom.png" alt="footerbar"/>
